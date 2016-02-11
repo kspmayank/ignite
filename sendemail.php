@@ -2,13 +2,13 @@
 	header('Content-type: application/json');
 	$status = array(
 		'type'=>'success',
-		'message'=>'Thank you for contact us. We will contact you As early as possible  '
+		'message'=>'Thank you for contacting us. We will contact you As early as possible  '
 	);
 
-    $name = @trim(stripslashes($_POST['name'])); 
-    $email = @trim(stripslashes($_POST['email'])); 
-    $subject = @trim(stripslashes($_POST['subject'])); 
-    $message = @trim(stripslashes($_POST['message'])); 
+    $name = $_POST['name']; 
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
 
     $email_from = $email;
     $email_to = 'mayankkashyap95@gmail.com';//replace with your email
