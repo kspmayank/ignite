@@ -11,10 +11,10 @@
     // $message = @trim(stripslashes($_POST['message'])); 
 
 
-    $name = 'name'; 
-    $email = 'email'; 
-    $subject = 'subject'; 
-    $message = 'message'; 
+    $name = $_POST['name1']; 
+    $email = $_POST['email1']; 
+    $subject = $_POST['subject1']; 
+    $message = $_POST['message1']; 
 
     $email_from = $email;
     $email_to = 'mayankkashyap95@gmail.com';//replace with your email
